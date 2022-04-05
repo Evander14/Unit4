@@ -1,3 +1,4 @@
+'''
 Do Now 4.02
 
 1. In your console
@@ -18,3 +19,10 @@ Write down what range(0, len(a_list)) does.
 
 3. In your console
 Use the range and len functions to make a for loop that prints the elements of a_list, one at a time.
+'''
+
+
+a_list = ['apple', 'orange', ' pear', 'strawberry', 'grape']
+
+for i in range(0,len(a_list)):
+    print(a_list(i))

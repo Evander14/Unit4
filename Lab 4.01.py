@@ -1,3 +1,4 @@
+'''
 Lab 4.01
 
 Remove the Vowels
@@ -37,3 +38,25 @@ Use a counter (variable you define outside of a loop to keep track of a value in
 count_vowels takes in a string and returns an int representing the number of vowels in the string.
 
 Can you think of an alternate way to do complete this task without any loop or counter, by making use of your new de_vowel() function instead?
+'''
+
+vowels = 'aeiou'
+def de_vowel(string):
+    no_vowels = ''
+    for letter in string:
+        no_vowels += letter
+    return no_vowels
+
+
+def count_vowels(string):
+    count = 0
+    for letter in string:
+        if letter in vowels:
+            count += 1
+
+    return count
+
+
+new_string = input("Enter a new string to devowel: ")
+print(f"There are {count_vowels(new_string)} vowels in your string")
+print(f"Your devoweled string is: {de_vowel(new_string)}.")
