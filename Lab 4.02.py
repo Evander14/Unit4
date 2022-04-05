@@ -93,10 +93,10 @@ def pluralize_words(word_list):
         else:
             word_list[c] += 's'
 
-word_list = ['apple', 'berry', 'melon']
-print(f"Singular words: {word_list}")
-pluralize_words(word_list)
-print(f"No longer singular words: {word_list}")
+my_list = ['apple', 'berry', 'melon']
+print(f"Singular words: {my_list}")
+pluralize_words(my_list)
+print(f"No longer singular words: {my_list}")
 
 
 def my_reverse(string_to_reverse):
@@ -104,4 +104,10 @@ def my_reverse(string_to_reverse):
 
 reversed = my_reverse("apples")
 print(reversed)
-    # examples go here
+
+def reverse_strings_in_list(list_to_reverse):
+    reversed_list = []
+    for item in list_to_reverse:
+        reversed_list.append(my_reverse)
+
+print(reverse_strings_in_list(my_list))
