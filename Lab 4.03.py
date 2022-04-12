@@ -80,7 +80,64 @@ For each of the following problems, you will write a function that will draw the
         *****
     
 '''
-# Write the code for your custom function below:
-def my_function():
-    # replace 'pass' with your code
-    pass
+
+
+'''
+# 1
+def draw_7():
+    #7 rows of stars
+    for i in range(7):
+        
+        #row of stars
+        my_string = ''
+        for i in range(7):
+            my_string += ' *'
+        print(my_string)
+draw_7()
+'''
+
+'''
+# 2
+def stars_and_stripes():
+    for i in range(3):
+        star_string = ''
+        for i in range(7):
+            star_string += ' *'
+        print(star_string)
+
+        dash_string = ''
+        for i in range(7):
+            dash_string += ' -'
+        print(dash_string)
+stars_and_stripes()
+'''
+
+'''
+#3
+def increasing_triangle():
+    triangle_string = ''
+
+    for i in range(1,8):
+        triangle_string += " " + str( i)
+        print(triangle_string)
+
+def increasing_deacreasing_triangle():
+    increasing_triangle()
+'''
+
+
+def vertical_stars_and_stripes():
+    #7 rows of stars
+    for i in range(3):
+        
+        #row of stars
+        my_string = ''
+        for i in range(3):
+            my_string += '  *'
+        print(my_string)
+
+        my_string = ''
+        for i in range(4):
+            my_string += ' -'
+        print(my_string)
+vertical_stars_and_stripes()
