@@ -120,12 +120,10 @@ def increasing_triangle():
     for i in range(1,8):
         triangle_string += " " + str( i)
         print(triangle_string)
-
-def increasing_deacreasing_triangle():
-    increasing_triangle()
 '''
 
-
+'''
+#4
 def vertical_stars_and_stripes():
     #7 rows of stars
     for i in range(3):
@@ -141,3 +139,5 @@ def vertical_stars_and_stripes():
             my_string += ' -'
         print(my_string)
 vertical_stars_and_stripes()
+'''
+
